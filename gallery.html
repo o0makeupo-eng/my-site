@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея мира - TravelGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <div class="header-content">
+            <h1><i class="fas fa-images"></i> Фотогалерея</h1>
+            <p class="subtitle">Галерея маршрутов: <span class="theme-name">TravelGuide</span></p>
+        </div>
+        
+       <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="routes.html">Маршруты</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="gallery-container">
+        <div class="controls-panel">
+            <div class="stats">
+                <span class="stat-item">
+                    <i class="fas fa-image"></i>
+                    Изображений: <span id="image-counter"></span>
+                </span>
+                <span class="stat-item">
+                    <i class="fas fa-heart"></i>
+                    Всего лайков: <span id="total-likes"></span>
+                </span>
+            </div>
+            
+            <div class="view-controls">
+                <button id="grid-view" class="view-btn active">
+                    <i class="fas fa-th"></i> Сетка
+                </button>
+                <button id="list-view" class="view-btn">
+                    <i class="fas fa-list"></i> Список
+                </button>
+            </div>
+        </div>
+        
+        <div class="filters">
+            <h3><i class="fas fa-filter"></i> Фильтры:</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="country">Страна</button>
+                <button class="filter-btn" data-filter="city">Город</button>
+            </div>
+        </div>
+
+        <div class="gallery-grid" id="image-gallery">
+    <!-- Карточка 1 -->
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9849.JPG" 
+                 alt="Рим"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="1">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Рим</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 15 марта 2024</p>
+            <p class="image-description">Рим (Италия, на реке Тибр) славится Колизеем, Пантеоном и Ватиканом — сюда едут за античной историей и шедеврами искусства.</p>
+            <div class="image-tags">
+                <span class="tag">Италия</span>
+            </div>
+        </div>
+    </article>
+    
+    <!-- Карточка 2 -->
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9850.JPG" 
+                 alt="Милан (Италия)"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="2">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Милан</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 20 марта 2024</p>
+            <p class="image-description">Милан (Италия, Ломбардия) славится Дуомо, Ла Скала и шопингом — сюда едут за модой, архитектурой и культурой.</p>
+            <div class="image-tags">
+                <span class="tag">Италия</span>
+            </div>
+        </div>
+    </article>
+        <!-- Карточка 3 -->
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9851.JPG" 
+                 alt="Барселона"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="3">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Барселона</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 31 марта 2024</p>
+            <p class="image-description">Барселона (Испания, Каталония, на берегу Средиземного моря) славится Саграда Фамилия, творениями Гауди и пляжами — сюда едут за архитектурой, морем и каталонской атмосферой.</p>
+            <div class="image-tags">
+                <span class="tag">Испания</span>
+            </div>
+        </div>
+    </article>
+                <!-- Карточка 4 -->
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9852.JPG" 
+                 alt="Лос-Анджелес"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="4">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Лос-Анджелес</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 1 декакбря 2025</p>
+            <p class="image-description">Лос‑Анджелес (США, Калифорния, на берегу Тихого океана) славится Голливудом, пляжами Малибу и Беверли‑Хиллз — сюда едут за атмосферой киноиндустрии, отдыхом у моря и шопингом.</p>
+            <div class="image-tags">
+                <span class="tag">США</span>
+            </div>
+        </div>
+    </article>
+                <!-- Карточка 5 -->
+    <article class="image-card" data-category="country">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9854.JPG" 
+                 alt="Египет"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="5">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Египет</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 31 декакбря 2025</p>
+            <p class="image-description">Египет (на стыке Африки и Азии) славится пирамидами Гизы, Сфинксом и пляжами Красного моря — сюда едут за древними памятниками и дайвингом среди коралловых рифов.</p>
+            <div class="image-tags">
+                <span class="tag">Египет</span>
+            </div>
+        </div>
+    </article>
+                  <!-- Карточка 6 -->
+    <article class="image-card" data-category="city">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9857.JPG" 
+                 alt="Париж"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="6">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Париж</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 30 июня 2025</p>
+            <p class="image-description">Париж (столица Франции, на реке Сене) славится Эйфелевой башней, Лувром и Елисейскими Полями — сюда едут за романтической атмосферой, искусством, модой и французской кухней.</p>
+            <div class="image-tags">
+                <span class="tag">Париж</span>
+            </div>
+        </div>
+    </article>
+                    <!-- Карточка 7 -->
+    <article class="image-card" data-category="country">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9858.JPG" 
+                 alt="Монако"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="7">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Монако</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 14 мая 2025</p>
+            <p class="image-description">Монако (на Лазурном берегу, у Средиземного моря) — карликовое государство, известное казино Монте‑Карло, Гран‑при Формулы‑1 и роскошной атмосферой; сюда едут за гламуром, яхтами и видами Старого города.</p>
+            <div class="image-tags">
+                <span class="tag">Монако</span>
+            </div>
+        </div>
+    </article>
+                 <!-- Карточка 8 -->
+    <article class="image-card" data-category="country">
+        <div class="card-image">
+            <img src="file:///C:/Users/admin/Desktop/ИПроект/images/IMG_9866.JPG" 
+                 alt="Танзания"
+                 class="gallery-img"
+                 loading="lazy">
+            <div class="image-overlay">
+                <button class="like-btn" data-id="8">
+                    <i class="far fa-heart"></i>
+                    <span class="like-count"></span>
+                </button>
+                <button class="zoom-btn">
+                    <i class="fas fa-expand"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-content">
+            <h3 class="image-title">Танзания</h3>
+            <p class="image-date"><i class="far fa-calendar"></i> 31 июля 2025</p>
+            <p class="image-description">Танзания (Восточная Африка, у Индийского океана) славится национальным парком Серенгети, горой Килиманджаро и островом Занзибар — сюда едут за сафари, треккингом и пляжным отдыхом.</p>
+            <div class="image-tags">
+                <span class="tag">Танзания</span>
+            </div>
+        </div>
+    </article>
+
+        <aside class="gallery-info">
+            <h3><i class="fas fa-lightbulb"></i> Интересный факт</h3>
+            <p>Знаете ли вы, что первый в мире туристический маршрут был организован британским предпринимателем Томасом Куком 5 июля 1841 года? Именно он положил начало современному туризму, организовав поездку 570 человек между городами Лейстер и Лафборо. Его главный принцип — «Получение максимальной выгоды для максимального количества людей по минимальной цене» — до сих пор актуален для многих путешественников.</p>
+        </aside>
+    </main>
+
+    <footer class="gallery-footer">
+        <div class="footer-content">
+            <p>&copy; <span id="current-year">2026</span> TravelGuide. Все права защищены.</p>
+            <p class="js-status">JavaScript загружен и работает!</p>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">

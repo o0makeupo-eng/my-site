@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - TravelGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1><i class="fas fa-globe"></i> TravelGuide</h1>
+            <p>Отзывы</p>
+        </div>
+        
+        <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="routes.html">Маршруты</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="container">
+        <section class="reviews-section card">
+            <h2>Отзывы наших путешественников</h2>
+            
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>Анна Петрова</h3>
+                    <p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                </div>
+                <p class="review-text">
+                    Использовала маршруты по Италии - всё чётко, информативно и удобно. Особенно понравилось подробное описание достопримечательностей.
+                </p>
+                <p class="review-date">25 мая 2026</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>Максим Иванов</h3>
+                    <p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                </div>
+                <p class="review-text">
+                    Планировал поездку в Париж - сайт помог составить оптимальный маршрут. Всё работает без сбоев.
+                </p>
+                <p class="review-date">12 июня 2026</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <h3>Елена Соколова</h3>
+                    <p><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                </div>
+                <p class="review-text">
+                    Отличный ресурс! Особенно впечатлила галерея фотографий и подробные описания маршрутов.
+                </p>
+                <p class="review-date">5 июня 2026</p>
+            </div>
+        </section>
+
+        <section class="write-review card">
+            <h2>Оставьте свой отзыв</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="review-name">Ваше имя</label>
+                    <input type="text" id="review-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review-email">Ваш email</label>
+                    <input type="email" id="review-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review-rating">Оцените сервис</label>
+                    <select id="review-rating" name="rating" required>
+                        <option value="">Выберите оценку</option>
+                        <option value="5">Отлично</option>
+                        <option value="4">Хорошо</option>
+                        <option value="3">Удовлетворительно</option>
+                        <option value="2">Плохо</option>
+                        <option value="1">Очень плохо</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review-text">Ваш отзыв</label>
+                    <textarea id="review-text" name="text" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn">Отправить отзыв</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+        <p>&copy; <span id="current-year">2026</span> TravelGuide. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршруты - TravelGuide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1><i class="fas fa-globe"></i> TravelGuide</h1>
+            <p>Маршруты</p>
+        </div>
+        
+      <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="routes.html">Маршруты</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main class="container">
+        <section class="routes-section card">
+            <h2>Популярные маршруты путешествий</h2>
+
+            <div class="route-card">
+                <div class="route-header">
+                    <h3>Концерт Kanye West в Стамбуле</h3>
+                    <p><i class="fas fa-clock"></i> 7 дней</p>
+                </div>
+                <div class="route-image">
+                    <img src="file:///C:/Users/admin/Downloads/IMG_9874.JPG" alt="Концерт каньи">
+                </div>
+                <div class="route-description">
+                    <p>Концерт рэпера Канье Уэста в Стамбуле обещает стать масштабным событием: до 118 тысяч зрителей, гигантские светодиодные конструкции, движущиеся платформы и синхронизированные световые браслеты для публики.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="route-card">
+                <div class="route-header">
+                    <h3>Путешествие по США</h3>
+                    <p><i class="fas fa-clock"></i> 14 дней</p>
+                </div>
+                <div class="route-image">
+                    <img src="file:///C:/Users/admin/Downloads/IMG_9875.JPG" alt="США">
+                </div>
+                <div class="route-description">
+                    <p>Поездка по США — это сочетание мегаполисов (Нью‑Йорк с Эмпайр‑стейт‑билдингом и Статуей Свободы, Лос‑Анджелес с Голливудом, Сан‑Франциско с мостом Золотые Ворота), природных красот (Гранд‑Каньон, Йеллоустоун, Йосемити) и культурных достопримечательностей (Вашингтон с Белым домом и мемориалами). Сюда едут за разнообразием впечатлений: от городской суеты до дикой природы и исторических мест.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+
+            <div class="route-card">
+                <div class="route-header">
+                    <h3>Круиз по Средиземноморью</h3>
+                    <p><i class="fas fa-clock"></i> 15 дней</p>
+                </div>
+                <div class="route-image">
+                    <img src="file:///C:/Users/admin/Downloads/IMG_9876.JPG" alt="Круиз">
+                </div>
+                <div class="route-description">
+                    <p>Круиз по Средиземноморью — отдых на современном лайнере с бассейнами, ресторанами и развлечениями, остановки в живописных портах: Рим, Барселона, Афины, Марсель и др. Идеальный вариант для тех, кто хочет увидеть несколько стран за одну поездку — с комфортом и без хлопот с переездами.</p>
+                    <a href="#" class="btn">Подробнее</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="route-filters card">
+            <h2>Фильтры маршрутов</h2>
+            <form class="filter-form">
+                <div class="filter-group">
+                    <label for="duration">Длительность:</label>
+                    <select id="duration" name="duration">
+                        <option value="">Все</option>
+                        <option value="short">До 5 дней</option>
+                        <option value="medium">6-10 дней</option>
+                        <option value="long">Более 10 дней</option>
+</select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="category">Категория:</label>
+                    <select id="category" name="category">
+                        <option value="">Все категории</option>
+                        <option value="city">Городские туры</option>
+                        <option value="nature">Природные маршруты</option>
+                        <option value="cruise">Круизы</option>
+                        <option value="adventure">Приключения</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price">Цена:</label>
+                    <select id="price" name="price">
+                        <option value="">Любая</option>
+                        <option value="low">До 50 000 ₽</option>
+                        <option value="medium">50 000 - 100 000 ₽</option>
+                        <option value="high">Более 100 000 ₽</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn">Применить фильтры</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+        <p>&copy; <span id="current-year">2026</span> TravelGuide. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
